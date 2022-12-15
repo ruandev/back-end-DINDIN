@@ -5,7 +5,7 @@
 		"lib": ["es5", "es6", "ES2018"],
 		"experimentalDecorators": true,
 		"emitDecoratorMetadata": true,
-		"module": "commonjs",
+		"module": "ES6",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"allowJs": true,
