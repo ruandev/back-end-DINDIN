@@ -35,6 +35,6 @@
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
     "build": "tsc",
-    "start": "node ./dist/application.js"
+    "start": "node ./dist/index.js"
   }
 }
