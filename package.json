@@ -4,7 +4,6 @@
   "main": "index.js",
   "author": "Leandro Carvalho <dev.leandrocarvalho@gmail.com>",
   "license": "MIT",
-  "type": "module",
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
