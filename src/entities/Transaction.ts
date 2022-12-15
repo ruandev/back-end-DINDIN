@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn } from "typeorm"
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, JoinColumn, Relation } from "typeorm"
 import { Category } from './Category'
 import { User } from './User'
 
@@ -22,11 +22,11 @@ export class Transaction {
 
     @ManyToOne(() => User, (user) => user.transactions)
     @JoinColumn({ name: 'user_id' })
-    user: User
+    user: Relation<User>
 
 
     @ManyToOne(() => Category, (category) => category.transactions)
     @JoinColumn({ name: "category_id" })
-    category: Category
+    category: Relation<Category>
 
 }
