@@ -4,6 +4,7 @@
   "main": "index.js",
   "author": "Leandro Carvalho <dev.leandrocarvalho@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "@types/bcrypt": "^5.0.0",
     "@types/cors": "^2.8.13",
@@ -35,6 +36,6 @@
     "migration:generate": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:generate ./src/migrations/default",
     "migration:run": "typeorm-ts-node-commonjs -d ./src/data-source.ts migration:run",
     "build": "mkdir dist && tsc",
-    "start": "node ./dist/index.js"
+    "start": "node --experimental-modules ./dist/index.js"
   }
 }
