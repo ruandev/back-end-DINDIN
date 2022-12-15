@@ -1,5 +1,4 @@
 import express from "express"
-require('dotenv').config()
 import 'express-async-errors'
 import { AppDataSource } from './data-source'
 import routes from './routes'
